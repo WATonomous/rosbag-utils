@@ -1,6 +1,6 @@
 # Convert video to ROS2 bag
 
-Convert a video (e.g. .mp4, .webm) to rosbag2 format.
+Convert a video (e.g. .mp4, .webm) to rosbag2 format. Tested for ROS 1 Noetic -> ROS 2 Humble.
 
 Build docker image:
 ```

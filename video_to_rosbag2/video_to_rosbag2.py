@@ -60,7 +60,6 @@ def video_to_rosbag2(video_path, bag_path):
 
     # Release resources
     cap.release()
-    writer.close()
     rclpy.shutdown()
 
 def convert_all_videos(source_path, destination_path):
@@ -69,7 +68,7 @@ def convert_all_videos(source_path, destination_path):
 
     for video_file in video_files:
         # Generate a unique bag file path for each video
-        bag_file_name = os.path.splitext(os.path.basename(video_file))[0] + '.db3'
+        bag_file_name = os.path.splitext(os.path.basename(video_file))[0]
         bag_path = os.path.join(destination_path, bag_file_name)
 
         print(f"Converting {video_file} to {bag_path}")
