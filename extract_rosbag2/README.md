@@ -1,6 +1,6 @@
 # Extract data from a rosbag2 file
 
-Extracts camera data into .png files and lidar data into .pcd files from a ROS 2 bag.
+Given a ROS 2 bag, finds all topics with camera (sensor_msgs/msg/Image) and lidar (sensor_msgs/msg/PointCloud2) messages and saves them into .jpg and .pcd files respectively.
 
 ## Build docker image
 
